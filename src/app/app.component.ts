@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SongListComponent } from './components/song-list/song-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true, 
+  template: '<app-song-list></app-song-list>', 
+  imports: [SongListComponent,HttpClientModule], 
 })
-export class AppComponent {
-  title = 'music-app';
-}
+export class AppComponent {}
