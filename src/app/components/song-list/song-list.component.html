@@ -2,11 +2,11 @@
     <div class="form-control">
       <input
         type="text"
-        placeholder="Enter artist name"
+        placeholder="Ingrese el nombre del artista"
         class="input input-bordered w-full"
         [(ngModel)]="artist"
       />
-      <button class="btn btn-primary mt-4" (click)="searchSongs()">Search</button>
+      <button class="btn btn-primary mt-4" (click)="searchSongs()">Buscar</button>
     </div>
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
@@ -16,7 +16,7 @@
         </figure>
         <div class="card-body">
           <h2 class="card-title">{{ song.name }}</h2>
-          <p>Artist: {{ song.artist }}</p>
+          <p>Artista: {{ song.artist }}</p>
           <p>Album: {{ song.album }}</p>
         </div>
       </div>

@@ -1,0 +1,12 @@
+<div class="p-6 bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-extrabold text-white mb-6 text-center">Preferencias musicales globales</h2>
+    <ul class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <li *ngFor="let preference of preferences" class="bg-gray-700 p-4 rounded-lg shadow-md hover:bg-gray-600 transform hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-indigo-400 mb-2">{{ preference.artist }}</h3>
+        <p class="text-white mb-1"><span class="font-bold">Género:</span> {{  preference.genre}}</p>
+        <p class="text-white mb-1"><span class="font-bold">Mood:</span> {{ preference.mood }}</p>
+        <p class="text-white"><span class="font-bold">Popularidad:</span> {{ preference.popularity }}</p>
+      </li>
+    </ul>
+  </div>
+  
